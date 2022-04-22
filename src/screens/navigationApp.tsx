@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import {View, Text} from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
 import { styles } from '../theme/styles';
+import { RootStackParams } from '../navigator/StackNavigator';
 
-
-interface Props extends StackScreenProps<any, any> {};
+interface Props extends StackScreenProps<RootStackParams, 'NavigationApp'> {};
 
 export const NavigationApp = ({ route, navigation } : Props) => {
 
@@ -12,7 +12,7 @@ export const NavigationApp = ({ route, navigation } : Props) => {
 
   useEffect(() => {
     navigation.setOptions({
-      title: params!.nombre as any
+      title: params.nombre as any
     });
   }, [])
 

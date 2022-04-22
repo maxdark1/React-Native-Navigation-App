@@ -24,7 +24,9 @@ export const Pagina1Screen = ( {navigation} : Props ) => {
           onPress={() => navigation.navigate('NavigationApp', {
             id: 1,
             nombre: 'Pedro Pablo',
-            direccion: 'Calle Falsa 123'
+            direccion: 'Calle Falsa 123',
+            salary: 30000,
+            gender: 'male'
           })}
         >
           <Text style={styles.bodyText}>Pedro</Text>

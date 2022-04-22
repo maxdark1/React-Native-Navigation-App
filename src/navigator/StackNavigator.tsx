@@ -5,7 +5,14 @@ import { Pagina2Screen } from '../screens/Pagina2Screen';
 import { Pagina3Screen } from '../screens/Pagina3Screen';
 import { NavigationApp } from '../screens/navigationApp';
 
-const Stack = createStackNavigator();
+export type RootStackParams = {
+  Pagina1Screen: undefined,
+  Pagina2Screen: undefined,
+  Pagina3Screen: undefined,
+  NavigationApp: { id: number, nombre: string, direccion : string, salary: number, gender: string },
+}
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => {
   return (
