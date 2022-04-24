@@ -17,16 +17,16 @@ const Stack = createStackNavigator<RootStackParams>();
 export const StackNavigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Pagina1Screen"
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: '#B55500',
-        },
-        cardStyle: {
-          backgroundColor: 'gray'
-        },
-        headerTintColor: '#fff',
-      }}
+    initialRouteName="Pagina1Screen"
+    screenOptions={{
+      headerStyle: {
+        backgroundColor: '#B55500',
+      },
+      cardStyle: {
+        backgroundColor: 'gray'
+      },
+      headerTintColor: '#fff',
+    }}
     >
       <Stack.Screen name="Pagina1Screen" options= {{title:"Steel Technologies"}} component={Pagina1Screen} />
       <Stack.Screen name="Pagina2Screen" options= {{title:"Menu"}} component={Pagina2Screen} />
